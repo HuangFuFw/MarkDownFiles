@@ -45,6 +45,8 @@ Multiple Clesses:
 
 ![](http://learn.shayhowe.com/assets/images/courses/html-css/getting-to-know-css/hexadecimal-syntax.png)
 
+![](https://raw.githubusercontent.com/HuangFuFw/MarkDownFiles/master/res/color_html.png)
+
 Color	Name	Hex Values	RGB Values	HSL Values
 black	#000000	rgb(0, 0, 0)	    hsl(0, 0%, 0%)
 silver	#c0c0c0	rgb(192, 192, 192)	hsl(0, 0%, 75%)
@@ -107,15 +109,96 @@ margin-top + border-top + padding-top + height + padding-bottom + border-bottom 
              
 ![dd](http://learn.shayhowe.com/assets/images/courses/html-css/opening-the-box-model/box-model.png)
 
-
+#### margin:
 div {
-  margin: 20px;
+  margin: 20px; 
 }
+// all four sides
 
 div {
   margin: 10px 20px;
 }
+// top and bottom first, then left and right
 
 div {
   margin: 10px 20px 0 15px;
+}
+//top, right, bottom, and left
+
+
+div {
+  margin-top: 10px;
+  padding-left: 6px;
+}
+
+####border
+
+div {
+  border: 6px solid #949599;
+}
+
+![border Type](https://raw.githubusercontent.com/HuangFuFw/MarkDownFiles/master/res/border_type.png)
+
+
+div {
+  border-bottom: 6px solid #949599;
+}
+
+div {
+  border-bottom-width: 12px;
+}
+
+
+.border-rounded {
+  border-radius: 5px;
+}
+
+.border-circle {
+  border-radius: 50%;
+}
+
+.border-football {
+  border-radius: 15px 75px;
+}
+
+
+####Box Sizing
+
+div {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+div {
+  box-sizing: border-box;
+}
+
+div {
+  box-sizing: padding-box;
+}
+
+
+![](http://learn.shayhowe.com/assets/images/courses/html-css/opening-the-box-model/box-sizing.png)
+
+####float
+
+section {
+  float: left;
+  width: 63%;
+}
+
+aside {
+  float: right;
+  width: 30%;
+}
+
+footer {
+  clear: both;
+  margin-bottom: 0;
+}
+####Relative Positioning
+.offset {
+  left: 20px;
+  position: relative;
+  top: 20px;
 }
