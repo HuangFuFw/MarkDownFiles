@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>css1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h2>css</h2>
+
+<h4>Cascading Properties</h4>
+
+<p>1.
+p {
+  background: orange;
+}</p>
+
+<p>2.</p>
+
+<div class="hotdog">
+  <p>...</p>
+  <p>...</p>
+  <p class="mustard">...</p>
+</div>
+
+<p>.hotdog p {
+  background: brown;
+}</p>
+
+<p>组合属性： 只有用hotdog父属性下的<p>的mustard属性背景是黄色
+.hotdog p.mustard {
+  background: yellow;
+}</p>
+
+<p>3.</p>
+
+<p id="food">...</p>           
+
+<p>#food {
+  background: green;
+}</p>
+
+<p>4.
+Multiple Clesses:</p>
+
+<p><a class="btn btn-danger">...</a>
+`</p>
+
+<h4>Colors</h4>
+
+<p>1.background: #800000  /  #ff0;
+2.background: rgb(128, 0, 0);
+3.background: rgba(128, 0, 0, .25);
+4.background: hsl(0, 100%, 25%); 
+5.background: hsla(0, 100%, 25%, .25);</p>
+
+<p><img src="http://learn.shayhowe.com/assets/images/courses/html-css/getting-to-know-css/hexadecimal-syntax.png" alt="" /></p>
+
+<p>Color   Name    Hex Values  RGB Values  HSL Values
+black   #000000 rgb(0, 0, 0)        hsl(0, 0%, 0%)
+silver  #c0c0c0 rgb(192, 192, 192)  hsl(0, 0%, 75%)
+gray    #808080 rgb(128, 128, 128)  hsl(0, 0%, 50%)
+white   #ffffff rgb(255, 255, 255)  hsl(0, 100%, 100%)
+maroon  #800000 rgb(128, 0, 0)      hsl(0, 100%, 25%)
+red     #ff0000 rgb(255, 0, 0)      hsl(0, 100%, 50%)
+purple  #800080 rgb(128, 0, 128)    hsl(300, 100%, 25%)
+fuchsia #ff00ff rgb(255, 0, 255)    hsl(300, 100%, 50%)
+green   #008000 rgb(0, 128, 0)      hsl(120, 100%, 25%)
+olive   #808000 rgb(0, 255, 0)      hsl(120, 100%, 50%)
+lime    #00ff00 rgb(128, 128, 0)    hsl(60, 100%, 25%)
+yellow  #ffff00 rgb(255, 255, 0)    hsl(60, 100%, 50%)
+navy    #000080 rgb(0, 0, 128)      hsl(240, 100%, 25%)
+blue    #0000ff rgb(0, 0, 255)      hsl(240, 100%, 50%)
+teal    #008080 rgb(0, 128, 128)    hsl(180, 100%, 25%)
+aqua    #00ffff rgb(0, 255, 255)    hsl(180, 100%, 50%)</p>
+
+<p><a href="https://color.adobe.com/">Adobe Kuler</a></p>
+
+<h4>width</h4>
+
+<p>1.
+.col {
+  width: 50%;  //50% of the parent element’s width.
+}</p>
+
+<p>2.
+.banner {
+  font-size: 14px;
+  width: 5em;//
+}
+注释：
+The em unit is represented by the em unit notation, and its length is calculated based on an element’s font size the width would equal 70 pixels (14 pixels multiplied by 5).</p>
+
+<h4>Display</h4>
+
+<p>p {
+  display: block;
+}</p>
+
+<p>p {
+  display: inline;
+}</p>
+
+<p>p {
+  display: inline-block;
+}</p>
+
+<p>div {
+  display: none;
+}</p>
+
+<h4>Box Model</h4>
+
+<h5>the total width formula:</h5>
+
+<p>margin-right + border-right + padding-right + width + padding-left + border-left + margin-left</p>
+
+<h5>the total height formula:</h5>
+
+<p>margin-top + border-top + padding-top + height + padding-bottom + border-bottom + margin-bottom</p>
+
+<p><img src="http://learn.shayhowe.com/assets/images/courses/html-css/opening-the-box-model/box-model.png" alt="dd" /></p>
+
+<p>div {
+  margin: 20px;
+}</p>
+
+<p>div {
+  margin: 10px 20px;
+}</p>
+
+<p>div {
+  margin: 10px 20px 0 15px;
+}</p>
+
+<p><img src="D:\MarkDownFiles\08.png" alt="a" /></p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
