@@ -202,3 +202,74 @@ footer {
   position: relative;
   top: 20px;
 }
+
+###font
+
+[Google Fonts](https://fonts.google.com)
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+//In this case, Helvetica Neue is the preferred font to display. If this font is unavailable or not installed on a given device, the next font in the list—Helvetica—will be used, and so on.
+
+body {
+  font-size: 14px;
+}
+
+
+.special {
+  font-style: italic;
+}
+
+//four keyword values: normal, italic, oblique, and inherit
+
+.firm {
+  font-variant: small-caps;
+}
+
+//hree values: normal, small-caps, and inherit
+
+.daring {
+  font-weight: bold;
+}
+
+//Keyword values include normal, bold, bolder, lighter, and inherit
+
+.daring {
+  font-weight: 600;
+}
+
+//The numeric values 100, 200, 300, 400, 500, 600, 700, 800, and 900
+
+.btn {
+  height: 22px;
+  line-height: 22px;
+}
+
+html {
+  font: italic small-caps bold 14px/22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+//font-style, font-variant, font-weight, font-size, line-height, and font-family.
+###a
+
+a {
+    color: #648880;
+    text-decoration: none;
+}
+
+a:hover h3 {
+  color: #a9b2b9;
+}
+
+p {
+  letter-spacing: -.5em;
+}
+
+p {
+  word-spacing: .25em;
+}
+
+                
