@@ -507,6 +507,48 @@ li {
 }
 
 
+##Adding Media
+
+#####Adding Images
+<img src="dog.jpg" alt="A black, brown, and white dog wearing a kerchief">
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+#####Adding audio
+
+<audio src="jazz.ogg" autoplay></audio>
+
+<audio src="jazz.ogg" controls></audio>
+
+<audio controls>
+  <source src="jazz.ogg" type="audio/ogg">
+  <source src="jazz.mp3" type="audio/mpeg">
+  <source src="jazz.wav" type="audio/wav">
+  Please <a href="jazz.mp3" download>download</a> the audio file.
+</audio>
+
+
+#####Adding vedio
+
+<video src="earth.ogv" controls></video>
+
+<video src="earth.ogv" controls poster="earth-video-screenshot.jpg"></video>
+//带有预览图的video
+
+<video controls>
+  <source src="earth.ogv" type="video/ogg">
+  <source src="earth.mp4" type="video/mp4">
+  Please <a href="earth.mp4" download>download</a> the video.
+</video>
+
+
+#####Adding Inline Frames
+<iframe src="https://www.google.com/maps/embed"></iframe>
+
+
 
 
 ##未知
